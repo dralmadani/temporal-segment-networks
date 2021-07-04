@@ -105,9 +105,11 @@ After download, please extract the videos from the `rar` archives.
 The following commands illustrate how to extract the videos.
 ```
 mkdir rars && mkdir videos
-unrar x hmdb51-org.rar rars/
-for a in $(ls rars); do unrar x "rars/${a}" videos/; done;
+unrar x hmdb51_org.rar rars for a in $(ls rars); 
+do unrar x "rars/${a}" videos/;
+done;
 ```
+you can use [the Unarchiver](https://theunarchiver.com/). It does the job well also, it's free 
 
 ### Get trained models
 [[back to top](#temporal-segment-networks-tsn)]
